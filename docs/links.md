@@ -1,0 +1,3 @@
+- [Github issue for vite-plugin-react](https://github.com/vitejs/vite-plugin-react/issues/222) discussing hot reloading for server-side-rendered react when `renderToPipeableStream` is used.
+- [An example of using Vite with react and server-side streaming](https://github.com/bluwy/create-vite-extra/tree/master/template-ssr-react-streaming) that I am going to base my investigation on.
+- [A place in source code](https://github.com/rakkasjs/rakkasjs/blob/ff95ee58ace4e262c320cc26884738ad0a74815c/packages/rakkasjs/src/features/pages/middleware.tsx#L750) that suggests what needs to be inserted in react-rendered html to achieve fast refresh
