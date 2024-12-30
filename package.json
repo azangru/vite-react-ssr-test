@@ -2,15 +2,20 @@
   "name": "vite-react-ssr-test",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "tsx watch --tsconfig ./tsconfig.node.json ./src/server/server.ts"
+    "dev": "tsx watch --tsconfig ./tsconfig.node.json ./src/server/server.ts",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "vite build --ssr src/client/MainServer.tsx --outDir dist/server",
+    "preview": "NODE_ENV=production tsx --tsconfig ./tsconfig.node.json ./src/server/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "4.21.2",
+    "express": "5.0.1",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
