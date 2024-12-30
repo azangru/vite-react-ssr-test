@@ -27,7 +27,7 @@ const Document = ({
             <script
               dangerouslySetInnerHTML={{
                 __html: `
-                  import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+                  import RefreshRuntime from '/@react-refresh'
                   RefreshRuntime.injectIntoGlobalHook(window)
                   window.$RefreshReg$ = () => {}
                   window.$RefreshSig$ = () => (type) => type

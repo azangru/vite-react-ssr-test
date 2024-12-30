@@ -1,10 +1,8 @@
+import FirstComponent from "./components/FirstComponent";
+
 const App = () => {
   return (
-    <div>
-      <h1>
-        This is my app!
-      </h1>
-    </div>
+    <FirstComponent />
   );
 };
 

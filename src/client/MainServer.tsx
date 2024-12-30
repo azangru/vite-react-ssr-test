@@ -16,8 +16,6 @@ const render = (params: Params, options: RenderToPipeableStreamOptions) => {
   const { manifest = {}, environment } = params;
   const entry = Object.values(manifest).find((chunk) => chunk.isEntry);
 
-  console.log('entry', entry);
-
   return renderToPipeableStream(
     <Document
       environment={environment}
